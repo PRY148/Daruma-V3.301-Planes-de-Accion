@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Este Caso de prueba se encagara de verificar que se cree correctamente un tipo de plan de accion.</description>
+   <name>1.Crear</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>02706f0e-8438-4ce4-8c7a-bac3d1df90e2</testCaseGuid>
+</TestCaseEntity>
