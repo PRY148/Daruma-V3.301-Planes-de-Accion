@@ -13,3 +13,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Configuracion/2.Origenes Planes de Accion/0.Ver'), [:])
+
+WebUI.click(findTestObject('Configuracion/2.Origenes Planes de Accion/2.Editar/1inputCheck_item_ap'))
+
+WebUI.click(findTestObject('Configuracion/2.Origenes Planes de Accion/2.Editar/2btn_Editar_ap'))
+
+WebUI.setText(findTestObject('Configuracion/2.Origenes Planes de Accion/2.Editar/3input_Origen_ap_classname'), 'Editando ando')
+
+WebUI.selectOptionByValue(findTestObject('Configuracion/2.Origenes Planes de Accion/2.Editar/4select_RiesgoRelacionado_ap'), 
+    '', true)
+
+WebUI.click(findTestObject('Configuracion/2.Origenes Planes de Accion/2.Editar/5btn_Guardar_ap'))
+
