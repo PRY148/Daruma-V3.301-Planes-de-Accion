@@ -13,3 +13,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Configuracion/5.Impactos/0.Ver'), [:])
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/3.Eliminar/1.inputCheck_Item_ap'))
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/3.Eliminar/2.btn_Delete_ap'))
+
+WebUI.acceptAlert()

@@ -13,3 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Configuracion/5.Impactos/0.Ver'), [:])
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/1.Crear/1.btn_Crear_ap'))
+
+WebUI.setText(findTestObject('Configuracion/5.Impactos/1.Crear/2.input_Impacto_ap_impactname'), 'Prueba de Calidad')
+
+WebUI.setText(findTestObject('Configuracion/5.Impactos/1.Crear/3.textarea_Descripcion_ap_impactnotes'), 'Estamos probando un registro para el modulo.')
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/1.Crear/4.btn_Guardar_ap'))
+
+
+

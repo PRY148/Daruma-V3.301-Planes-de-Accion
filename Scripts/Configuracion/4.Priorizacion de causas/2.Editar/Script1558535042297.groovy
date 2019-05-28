@@ -13,3 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Configuracion/4.Priorizacion de causas/0.Ver'), [:])
+
+WebUI.click(findTestObject('Configuracion/4.Priorizacion de Causas/2.Editar/1.inputCheck_Items'))
+
+WebUI.click(findTestObject('Configuracion/4.Priorizacion de Causas/2.Editar/2.btn_Editar_ap'))
+
+WebUI.setText(findTestObject('Configuracion/4.Priorizacion de Causas/2.Editar/3.input_Prioridad_tq_cause_effectname'), 'Editando')
+
+WebUI.setText(findTestObject('Configuracion/4.Priorizacion de Causas/2.Editar/4.textarea_Description_ap'), 'Estamos Editando algo bien tuty, Caramelo...')
+
+WebUI.click(findTestObject('Configuracion/4.Priorizacion de Causas/2.Editar/5.btn_Guardar_ap'))
+

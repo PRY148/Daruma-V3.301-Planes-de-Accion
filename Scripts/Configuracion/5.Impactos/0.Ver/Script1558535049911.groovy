@@ -13,3 +13,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://34.210.132.114/app.php/staff/')
+
+WebUI.callTestCase(findTestCase('General Daruma/Login'), [:])
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/0.Ver/1.btn_AbrirModulos'))
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/0.Ver/2.btn_AbrirModulo_ap'))
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/0.Ver/3.span_AbrirConfiguracion'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Configuracion/5.Impactos/0.Ver/a_Impactos'))
+
